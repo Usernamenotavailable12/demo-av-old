@@ -591,3 +591,16 @@ Games Lobby
   height: auto;
   object-fit: cover;
 }
+
+.image-overlay {
+  opacity: 0;
+  position: absolute;
+  width: 100%;
+  transition: ease-in-out opacity .45s;
+}
+
+.image-overlay:hover {
+  opacity: 1;
+  transition: ease-in-out opacity .1s;
+  cursor: pointer;
+}
