@@ -453,3 +453,51 @@ input[type="text"] {
   border-bottom: 4px solid rgba(255, 108, 187, 0.35);
   border-left: 4px solid rgba(255, 108, 187, 0.35);
 }
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+  .navi-item-1,
+  .navi-item-2,
+  .navi-item-3,
+  .navi-item-active {
+    display: none;
+  }
+  .register-button,
+  .login-button {
+    display: none;
+  }
+}
+@media (min-width: 420px) and (max-width: 767px) {
+  .lang-switcher {
+    position: absolute;
+    right: 0;
+  }
+  .logo {
+    margin-left: 50px;
+  }
+}
+@media (min-width: 1px) and (max-width: 420px) {
+  .lang-switcher {
+    display: none;
+  }
+  .logo {
+    margin-left: 42vw;
+  }
+}
+@media (max-width: 1300px) and (min-width: 768px) {
+  .navi-item-1,
+  .navi-item-2,
+  .navi-item-3,
+  .lang-switcher {
+    display: none;
+  }
+}
