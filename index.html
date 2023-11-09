@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="./global.css" />
+    <link rel="stylesheet" href="./root.css" />
+    <link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@800&display=swap"
+  />
+  <link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap"
+  />
+  </head>
+  <body>
+    <div class="header">
+      <div class="logo"> <img class="vector-icon" alt="" src="./public/vector3.svg"> </div>
+      <div class="navi-item-active">MAIN</div>
+      <div class="navi-item-1">SLOTS</div>
+      <div class="navi-item-2">CASINO</div>
+      <div class="navi-item-3">SHOP</div>
+      <div class="lang-switcher">ENG
+        <div class="sub-lang-switcher-1">GEO</div>
+        <div class="sub-lang-switcher-2">RUS</div>
+      </div>
+      <button onclick="openPopup()" class="register-button">REGISTER</button>
+      <button onclick="openPopup()" class="login-button">LOGIN</button>
+      </div>
+
+      <div id="overlay"></div>
+      <div id="popup">
+          <span id="close-btn" onclick="closePopup()">&times;</span>
+          <h2>Registration Form</h2>
+    
+          <form>
+              <label for="username">Username:</label>
+              <input type="text" id="username" name="username" required>
+              
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" required>
+              
+              <label for="password">Password:</label>
+              <input type="password" id="password" name="password" required>
+      
+              <button class="submit" type="submit">Register</button>
+          </form>
+      </div>
+      <div class="carousel">
+        <div class="carousel-inner">
+          <div class="slide">
+            <img src="./public/146da3115603715-2@2x.png" alt="Slide 1">
+            <div class="content">
+              <div class="text"><h8>Slide 1 Text</h8><br>
+                <h7>Secound Line</h7>
+              </div>
+              <a href="#" onclick="openPopup()" class="btn">Learn More</a>
+            </div>
+          </div>
+          <div class="slide">
+            <img src="./public/146da3115603715-2@2x.png" alt="Slide 2">
+            <div class="content">
+              <div class="text"><h8>Slide 1 Text</h8><br>
+                <h7>Secound Line</h7>
+              </div>
+              <a href="#" onclick="openPopup()" class="btn">Learn More</a>
+            </div>
+          </div>
+          <!-- Add more slides as needed -->
+        </div>
+      </div>
+
+
+      <div class="providers-list">
+            <img class="isoftbet-icon" alt="" src="./public/isoftbet.svg">
+
+            <img class="microgaming-icon" alt="" src="./public/microgaming.svg">
+
+            <img class="playn-go-icon" alt="" src="./public/playn-go.svg">
+
+            <img class="netent-icon" alt="" src="./public/netent.svg">
+
+            <img class="quickspin-icon" alt="" src="./public/quickspin.svg">
+
+            <img class="relax-icon" alt="" src="./public/relax.svg">
+
+            <img class="red-tiger-icon" alt="" src="./public/red-tiger.svg">
+
+            <img class="evolution-icon" alt="" src="./public/evolution.svg">
+            
+            <img class="isoftbet-icon" alt="" src="./public/isoftbet.svg">
+      </div>
+
+
+
+
+
+      
+      <script>
+          function openPopup() {
+              document.getElementById("overlay").style.display = "block";
+              document.getElementById("popup").style.display = "block";
+          }
+  
+          function closePopup() {
+              document.getElementById("overlay").style.display = "none";
+              document.getElementById("popup").style.display = "none";
+          }
+          let currentIndex = 0;
+  const slides = document.querySelector('.carousel-inner');
+  const totalSlides = document.querySelectorAll('.slide').length;
+
+  function showSlide(index) {
+    if (index < 0) {
+      currentIndex = totalSlides - 1;
+    } else if (index >= totalSlides) {
+      currentIndex = 0;
+    } else {
+      currentIndex = index;
+    }
+
+    const translateValue = -currentIndex * 100 + '%';
+    slides.style.transform = 'translateX(' + translateValue + ')';
+  }
+
+  function autoSlide() {
+    setInterval(function () {
+      showSlide(currentIndex + 1);
+    }, 4500); // Change slide every 3 seconds
+  }
+
+  autoSlide();
+      </script>
+  
+  </body>
+  <button></button>
+<h1></h1>
