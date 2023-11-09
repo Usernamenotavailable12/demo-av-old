@@ -115,13 +115,14 @@
 .lang-switcher:hover .sub-lang-switcher-2 {
   display: block;
   color: var(--color-gray-200);
+  background-color: rgb(13, 99, 53);
 }
 .sub-lang-switcher-1:hover,
 .sub-lang-switcher-2:hover {
-  background-color: rgba(25, 210, 110, 0.53);
+  background-color: rgb(16, 136, 72) !important;
 }
 .lang-switcher::before {
-  content: ".";
+  content: "";
   position: absolute;
   top: 40px;
   width: 82px;
@@ -132,6 +133,7 @@
   color: rgba(255, 255, 255, 0.753);
   border: 4px solid rgba(108, 255, 141, 0.35);
   padding-bottom: px;
+  background-color: rgb(13, 99, 53);
 }
 
 
@@ -160,7 +162,8 @@ Popout
   display: none;
   position: fixed;
   top: 20vh;
-  left: 38%;
+  left: 50%;
+  transform: translate(-50%, 0);
   background: linear-gradient( 180deg, rgba(17, 26, 51, 0.71), rgba(17, 26, 51, 0.53) );
   backdrop-filter: blur(15px);
   -webkit-backdrop-filter: blur(15px);
@@ -293,7 +296,7 @@ Carusel
 /* 
 
 
-Carusel 2
+Provider List
 
 
 */
@@ -464,40 +467,90 @@ input[type="text"] {
 
 
 
-@media (max-width: 768px) {
-  .navi-item-1,
-  .navi-item-2,
-  .navi-item-3,
-  .navi-item-active {
-    display: none;
+@media (max-width: 1368px) {
+  .header {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr) 5fr repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    }
+    .logo { grid-area: 1 / 1; margin-left: 50px; }
+    .navi-item-active { display: none; }
+    .navi-item-1 { display: none; }
+    .navi-item-2 { display: none; }
+    .navi-item-3 { display: none; }
+    .lang-switcher { grid-area: 1 / 9; margin-right: 50px; }
+    .register-button { display: none; }
+    .login-button { display: none; }
+
+    
+/* 
+
+
+Carusel
+
+
+*/
+
+
+
+.carousel {
+  width: 250%;
+}
+.content {
+  position: absolute;
+  top: 75%;
+  left: 50vw;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: rgb(211, 211, 252, .5);
+  background: radial-gradient(rgb(0, 0, 0, .8) 20%, transparent, transparent);
+  padding: 100px;
+}
+
+
+
+/* 
+
+
+Provider List
+
+
+*/
+
+.providers-list {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr;
   }
-  .register-button,
-  .login-button {
-    display: none;
+  .providers-list .isoftbet-icon,
+  .providers-list .evolution-icon,
+  .providers-list .red-tiger-icon,
+  .providers-list .playn-go-icon { 
+      display: none;
   }
 }
-@media (min-width: 420px) and (max-width: 767px) {
-  .lang-switcher {
-    position: absolute;
-    right: 0;
+@media (max-width: 700px) {
+  .providers-list img { 
+      display: none;
   }
-  .logo {
-    margin-left: 50px;
+  .providers-list {
+    padding: 0px;
+    margin-top: -30px;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    background: linear-gradient( 180deg, rgba(17, 26, 51, .1) 30%, rgba(17, 26, 51, 1));
+    height: 30px;
+    width: 100%;
+  }
+  .content {
+    top: 70%;
+    z-index: 1000;
   }
 }
-@media (min-width: 1px) and (max-width: 420px) {
-  .lang-switcher {
-    display: none;
-  }
-  .logo {
-    margin-left: 42vw;
-  }
-}
-@media (max-width: 1300px) and (min-width: 768px) {
-  .navi-item-1,
-  .navi-item-2,
-  .navi-item-3,
-  .lang-switcher {
-    display: none;
-  }
+@media (max-width: 400px) {
+  .logo { grid-area: 1 / 6; margin-left: 0px; }
+  .lang-switcher { display: none; }
 }
