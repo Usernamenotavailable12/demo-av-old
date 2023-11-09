@@ -108,6 +108,7 @@
 }
 .sub-lang-switcher-2 {
   border-bottom: 4px solid rgba(108, 255, 141, 0.35);
+  margin-top: -5px;
 }
 
 .lang-switcher:hover .sub-lang-switcher-1,
