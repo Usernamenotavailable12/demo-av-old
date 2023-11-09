@@ -457,7 +457,9 @@ input[type="text"] {
   border-left: 4px solid rgba(255, 108, 187, 0.35);
 }
 
-
+.header-2 {
+  display: none;
+}
 
 
 
@@ -495,7 +497,7 @@ Carusel
 
 
 
-.carousel {
+.carousel img {
   width: 250%;
 }
 .content {
@@ -506,7 +508,7 @@ Carusel
   text-align: center;
   color: rgb(211, 211, 252, .5);
   background: radial-gradient(rgb(0, 0, 0, .8) 20%, transparent, transparent);
-  padding: 100px;
+  padding: 10px;
 }
 
 
@@ -515,6 +517,58 @@ Carusel
 
 
 Provider List
+
+
+*/
+
+
+
+.header-2 {
+  bottom: 0;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  text-align: center;
+  font-size: var(--font-size-9xl);
+  color: var(--color-gray-200);
+  font-family: var(--font-inter);
+  background: linear-gradient( 180deg, rgba(17, 26, 51, 0.71), rgba(17, 26, 51, 1) );
+  width: 100%;
+  height: auto;
+  padding: 10px;
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  position: fixed;
+  gap: 40px;
+  border-top: 6px solid #14245180;
+}
+.navi-item-active-mob {
+  border-top: 6px solid transparent;
+  border-image: linear-gradient(0.25turn, transparent, #1d4ed4, transparent);
+  border-image-slice: 1;
+  margin-top: -16px;
+  color: white;
+  padding-top: 10px;
+}
+.mobile-footer {
+  margin-bottom: 57px;
+}
+@media (max-width: 790px) {
+  .header-2 {
+    font-size: 16px;
+  }
+  .mobile-footer {
+    margin-bottom: 40px;
+  }
+}
+
+
+/* 
+
+
+Bottom Header
 
 
 */
