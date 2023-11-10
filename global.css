@@ -159,6 +159,7 @@ Popout
 }
 
 #popup {
+  text-transform: uppercase;
   display: none;
   position: fixed;
   top: 20vh;
@@ -201,11 +202,13 @@ label {
 input {
   width: 100%;
   padding: 8px;
+  max-width: 250px;
   margin-top: 5px;
   margin-bottom: 10px;
   box-sizing: border-box;
   border: 1px solid #ccc;
-  border-radius: 4px;
+  border-radius: 30px;
+  background: rgba(255, 255, 255, 0.2);
 }
 
 .submit {
@@ -499,6 +502,7 @@ Carusel
 
 .carousel img {
   width: 250%;
+  margin-top: 75px;
 }
 .content {
   position: absolute;
@@ -507,9 +511,13 @@ Carusel
   transform: translate(-50%, -50%);
   text-align: center;
   color: rgb(211, 211, 252, .5);
-  background: radial-gradient(rgb(0, 0, 0, .8) 20%, transparent, transparent);
+  background: rgba(0, 0, 0, 0.2);
   padding: 10px;
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  border: solid 2px rgba(0, 0, 0, 0.3);
 }
+
 
 
 
@@ -543,6 +551,7 @@ Provider List
   position: fixed;
   gap: 40px;
   border-top: 6px solid #14245180;
+  padding-bottom: 25px;
 }
 .navi-item-active-mob {
   border-top: 6px solid transparent;
@@ -561,6 +570,22 @@ Provider List
   }
   .mobile-footer {
     margin-bottom: 40px;
+  }
+}
+@media (max-width: 670px) {
+  .header-2 {
+    bottom: 0;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    gap: 20px;
+  }
+}
+@media (max-width: 400px) {
+  .header-2 {
+    padding-left: 0;
   }
 }
 
@@ -605,6 +630,32 @@ Bottom Header
   }
 }
 @media (max-width: 400px) {
-  .logo { grid-area: 1 / 6; margin-left: 0px; }
+  .logo { display: inline-block; margin: auto auto auto 43vw; }
   .lang-switcher { display: none; }
+  .header {
+    height: 30px;
+  }
+  .logo {
+    transform: scale(.7);
+    margin-top: -15px;
+  }
+}
+@media (max-width: 670px) {
+  .content {
+    padding: 10px;
+    line-height: .5;
+  }
+  .content h8 {
+    font-size: 19px;
+  }
+  .content h7 {
+    font-size: 12px;
+  }
+  .btn {
+    font-size: 10px;
+    width: 50%;
+  }
+  .carousel img {
+  margin-top: 50px;
+}
 }
