@@ -514,6 +514,7 @@ Carusel
   background: rgba(0, 0, 0, 0.2);
   padding: 10px;
   backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
   border-radius: 20px;
   border: solid 2px rgba(0, 0, 0, 0.3);
 }
