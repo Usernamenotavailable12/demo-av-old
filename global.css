@@ -553,6 +553,7 @@ Provider List
   gap: 40px;
   border-top: 6px solid #14245180;
   padding-bottom: 25px;
+  cursor: pointer;
 }
 .navi-item-active-mob {
   border-top: 6px solid transparent;
