@@ -739,7 +739,6 @@ Shop page
 
 */
 
-
 .shop-container {
   width: 80%;
   margin: 0 auto;
@@ -748,6 +747,11 @@ Shop page
   padding-top: 95px;
   padding-bottom: 80px;
 }
+@media (max-width: 400px) {
+  .shop-container {
+    padding-top: 58px;
+  }
+} 
 
 .item-row {
   display: flex;
