@@ -660,3 +660,69 @@ Bottom Header
   margin-top: 50px;
 }
 }
+
+
+
+
+
+
+/* 
+
+Game page iframe
+
+*/
+
+.game-box {
+  padding-top: 75px;
+}
+@media (max-width: 400px) {
+  .game-box {
+    padding-top: 55px;
+  }
+}
+
+iframe {
+  width: 100%;
+  height: 65%;
+  border: none;
+}
+
+
+.container-descr {
+  text-align: center;
+}
+
+.card-content {
+  margin-top: 20px;
+}
+
+.thumbnail {
+  width: 275px; /* Adjust the width as needed */
+  height: auto;
+  border-radius: 10%;
+}
+
+.card-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 10px 0;
+  color: white;
+}
+
+.card-description {
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.548);
+}
+
+.description-background {
+  background: url(./public/mask-group8@2x.png);
+  background-repeat: no-repeat;
+  filter: blur(5px);
+  background-size: cover;
+  display: block;
+  height: 300px;
+  margin-top: -260px;
+  margin-bottom: -5px;
+  opacity: .2;
+  clip-path: polygon(0 5%, 100% 5%, 100% 98%, 0 98%);
+}
