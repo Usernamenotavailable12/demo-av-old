@@ -399,6 +399,9 @@ Footer Style
 section {
   margin-bottom: 20px;
 }
+section p {
+  font-size: 14px;
+}
 
 footer {
   background: rgb(8, 13, 26);
