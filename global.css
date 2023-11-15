@@ -868,3 +868,46 @@ Shop page
       width: calc(100% - 20px);
   }
 }
+
+
+
+
+/* 
+
+
+Chat Widget
+
+
+*/
+
+
+
+.Papercups-toggleButtonContainer svg path {
+  fill: #2c3449 !important;
+  stroke: #2c3449 !important;
+  transition: fill .7s, stroke .7s;
+}
+
+.Papercups-toggleButtonContainer {
+  --theme-ui-colors-primary: white !important;
+}
+
+.Papercups-toggleButtonContainer:hover svg path {
+  fill: white !important;
+  stroke: white !important;
+  transition: fill .7s, stroke .7s;
+}
+@media (max-width:768px) {
+  .Papercups-toggleButtonContainer {
+    margin-bottom: 35px;
+    transform: scale(.6);
+    margin-right: -10px;
+    background-color: white;
+    border-radius: 7px;
+    transition: background-color .2s;
+  }
+  .Papercups-toggleButtonContainer:hover {
+    background-color: #2c3449;
+    transition: background-color .2s;
+  }
+}
