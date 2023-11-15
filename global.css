@@ -46,7 +46,7 @@
   color: white;
   transition: ease-in-out color .5s;
 }
-.navi-item-active {
+#navi-item-underline {
     border-bottom: 6px solid transparent;
     border-image: linear-gradient(0.25turn, transparent, #1d4ed4, transparent);
     border-image-slice: 1;
