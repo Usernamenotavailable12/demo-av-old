@@ -9,7 +9,7 @@ window.Papercups = {
     showAgentAvailability: false,
     agentAvailableText: "We're online right now!",
     agentUnavailableText: "We're away at the moment.",
-    requireEmailUpfront: true,
+    requireEmailUpfront: false,
     iconVariant: "filled",
     baseUrl: "https://app.papercups.io"
     // Optionally include data about your customer here to identify them
