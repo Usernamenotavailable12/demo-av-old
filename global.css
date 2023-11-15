@@ -337,8 +337,8 @@ Games Lobby
 
  .lobby-container {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  gap: 10px;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 15px;
   padding: 20px;
  }
 
@@ -368,12 +368,12 @@ Games Lobby
   transition: ease-in-out opacity .1s;
   cursor: pointer;
 }
-@media (max-width:500px) {
+@media (max-width:560px) {
   .lobby-container {
     grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
    }
 }
-@media (max-width:400px) {
+@media (max-width:370px) {
   .lobby-container {
     grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
    }
@@ -868,6 +868,11 @@ Shop page
       width: calc(100% - 20px);
   }
 }
+
+
+
+
+
 
 
 
