@@ -42,7 +42,8 @@
 .navi-item:hover,
 .navi-item-1:hover,
 .navi-item-2:hover,
-.navi-item-3:hover {
+.navi-item-3:hover,
+.navi-item-active:hover {
   color: white;
   transition: ease-in-out color .5s;
 }
