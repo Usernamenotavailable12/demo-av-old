@@ -367,7 +367,16 @@ Games Lobby
   transition: ease-in-out opacity .1s;
   cursor: pointer;
 }
-
+@media (max-width:500px) {
+  .lobby-container {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+   }
+}
+@media (max-width:400px) {
+  .lobby-container {
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+   }
+}
 
 
 
